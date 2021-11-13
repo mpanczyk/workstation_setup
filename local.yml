@@ -4,6 +4,7 @@
   - name: Install packages
     apt: name={{item}}
     with_items:
+      - apt
       - htop
       - mc
       - vim
