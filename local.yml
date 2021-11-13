@@ -1,0 +1,34 @@
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Install packages
+    apt: name={{item}}
+    with_items:
+      - htop
+      - mc
+      - vim
+      - geeqie
+      - git
+      - gcc
+      - g++
+      - bash-completion
+      - evince
+      - procinfo
+      - lshw
+      - docker.io
+      - docker-compose
+      - chromium-browser
+      - rawtherapee
+      - gimp
+      - pluma
+      - inkscape
+      - mpv
+      - liblzma-dev
+      - konsole
+      - audacity
+      - scrot
+      - ffmpeg
+      - nmap
+      - xfonts-terminus
+      - i3
+      - pandoc
